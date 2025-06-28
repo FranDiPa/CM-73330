@@ -124,14 +124,10 @@ main {
   align-items: center; 
 }
 
-#navIndex {
-  position: fixed; 
-  top: 82px; 
-  left: 700px; 
+#navIndex { 
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   background-color: rgba(0, 81, 255, 0.758);
-  z-index: 1000; 
   text-align: center;
   background-color: rgba(12, 13, 13, 0.758);
   font-size: 25px;
@@ -277,7 +273,6 @@ section ul {
 }
 
 .formulario {
-  width: 600px;
   text-align: left;
   font-size: 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
