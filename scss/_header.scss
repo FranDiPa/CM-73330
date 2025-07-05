@@ -1,0 +1,129 @@
+@import "variables";
+
+@mixin text-center {
+    text-align: $text-align;
+    color: $white-color;
+}
+
+header{
+    background-color: $secundary-color;
+    grid-template-rows: auto;
+    border: 2px solid black;
+
+    .tituloIndex{
+    background-color: rgba(12, 13, 13, 0.758);
+    @include text-center;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase; /*texto mayuscula*/
+    border: 2px solid black;
+    }
+    
+#navIndex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    background-color: $secundary-color;
+    @include text-center;
+    background-color: rgba(12, 13, 13, 0.758);
+    font-size: 25px;
+}
+.active{
+    color: aliceblue;
+    text-decoration: none; /*Quita el subrayado*/
+    text-transform: uppercase; /*texto mayuscula*/
+    font-weight: bold; /*negrita*/
+    padding: 10px; /* Espacio alrededor del texto */
+}
+.active:hover{/* se agranda cuando pasa el mouse x encima */
+    color: rgba(186, 109, 240, 0.968);
+    text-decoration: none; /*Quita el subrayado*/   
+    text-transform: uppercase;
+    font-weight: bold; /*negrita*/
+    padding: 10px; /* Espacio alrededor del texto */
+
+}
+}
+.subIndex{
+    color: aliceblue;
+    font-style: italic; /*cursiva*/
+    font-size: 25px;
+    text-decoration: underline; /*subrayado*/
+}
+#Sucursal{
+font-size: 25px;
+text-align: center;
+color: aliceblue;
+text-decoration: overline;/*subrayado x encima*/
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imgInicio{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bienvenida{
+    margin: 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.parrafo{
+    margin: 10px;
+    font-size: $pasect;
+}
+
+.ver:hover{
+    color: rgba(186, 109, 240, 0.968);
+    text-decoration: none; /*Quita el subrayado*/
+    text-transform: uppercase;
+    font-weight: bold; /*negrita*/
+}
+
+a:hover{
+    color: rgba(186, 109, 240, 0.968);
+    text-decoration: none; /*Quita el subrayado*/
+    text-transform: uppercase;
+    font-weight: bold; /*negrita*/
+}
+
+a{ /* bootstrap inicio-ver repuestos */
+    color: aliceblue;
+    text-decoration: none; /*Quita el subrayado*/
+    text-transform: uppercase; /*texto mayuscula*/
+    font-weight: bold; /*negrita*/ 
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.91);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin: 20px; /* Espacio alrededor de la tarjeta */
+    padding: 20px; /* Espacio interno de la tarjeta */
+    font-size: 16px; 
+}
+.resena{
+    width: 100%;
+    height:  50%;
+    border-radius: 10px;
+}
+
+.contactInicio:hover{ /* Se agranda la letra cuando pasa el cursor por encima */
+    font-size: 30px;
+    color:rgba(186, 109, 240, 0.968);
+}
+.contactInicio{
+    color:$white-color;
+    font-size: $pasect;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    text-decoration: none; /*Quita el subrayado*/
+    padding: 10px;
+    transition: all 0.3s ease; /* Transición suave para el cambio de tamaño */
+
+}
+.caja{
+    width:1000px ;
+    background-color:$white-color;
+    line-height: 50px;
+}

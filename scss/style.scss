@@ -1,0 +1,149 @@
+@import "variables";
+@import "header";
+
+@mixin text-center {
+    text-align: $text-align;
+    color: $white-color;
+}
+
+body{
+    background-color: $primary-color;
+    padding: $spacing;
+    text-align: $text-align;
+}
+
+body {
+    background: linear-gradient(90deg, red, blue);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+    footer{
+    background-color: $secundary-color;
+    
+    border: 2px solid black;
+    @include text-center;
+
+}
+
+main{
+    background-color: $white-color;
+}
+.sectionRep{
+    display: $dispflex;
+    @include text-center; 
+}
+
+
+.maps{
+    width: 5%;
+    height: 40px;
+    border-radius: $bord;
+    vertical-align: middle;
+}
+
+
+section{
+    font-size: $pasect;
+}
+
+.reTaller{
+    width: 100%;
+    height: auto;
+}
+.reParrafo{
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @include text-center;
+    text-transform: uppercase; /*texto mayuscula*/
+    
+    
+}
+h4{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+.fAire{
+    display: $dispflex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: rgba(180, 189, 209, 0.758);
+    width: 300px;
+    height: auto;
+}
+.cajaRep{
+    display: $dispflex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    align-content: center; 
+    flex-wrap: wrap; 
+    background-color: $terciary-color;
+}
+.whatsapp{
+    width: 40px;
+    border-radius: 50%;
+}
+.imgMaps{
+    width: 40px;
+    border-radius: 800%;
+}
+
+.boxImg{
+    flex-direction: column;
+    display: $dispflex;
+    justify-content: center;
+    background-color: $secundary-color;
+    border-radius: $bord;
+    border: 2px solid black;
+    color: white;
+    width: 20%;
+    height: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.formulario{
+    width: 600px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin: 20px;
+    padding: 20px;
+    background-color: $secundary-color;
+    border-radius: $bord;
+    border: 2px solid black;
+}
+
+textarea,input{ /* tamanio formulario cuadritos */
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #2421dc;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+.input-group{ /* buscador repuestos */
+    width: 50%;
+    height: 40px;
+    display: $dispflex; 
+    margin: 0 auto; 
+}
+
+#button-addon2{
+    width: 100px; /* Ancho del botón */
+    height: 40px; /* Alto del botón */
+    background-color: rgba(109, 134, 187, 0.758);
+    color: white;
+}
