@@ -6,10 +6,26 @@
     color: $white-color;
 }
 
+// utils/_mixins.scss
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
 body{
     background-color: $primary-color;
     padding: $spacing;
     text-align: $text-align;
+    height: 100%;
+
 }
 
 body {

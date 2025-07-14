@@ -9,7 +9,7 @@ header{
     background-color: $secundary-color;
     grid-template-rows: auto;
     border: 2px solid black;
-
+    width: 100%;
     .tituloIndex{
     background-color: rgba(12, 13, 13, 0.758);
     @include text-center;
@@ -43,6 +43,7 @@ header{
 
 }
 }
+
 .subIndex{
     color: aliceblue;
     font-style: italic; /*cursiva*/
