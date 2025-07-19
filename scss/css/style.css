@@ -252,6 +252,23 @@ h4 {
   width: 40px;
   border-radius: 800%;
 }
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25D366;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: breathe 2s ease-in-out infinite; /* Añade una animación */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
 
 .boxImg {
   flex-direction: column;

@@ -19,6 +19,23 @@ header{
     border: 2px solid black;
     }
     
+    .whatsapp-btn i {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Animación */
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 #navIndex{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
